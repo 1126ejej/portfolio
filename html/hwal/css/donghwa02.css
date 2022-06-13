@@ -1,0 +1,522 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap');
+*{font-family:'Nanum Myeongjo', serif;}
+*{box-sizing:border-box;}
+
+body{
+    padding:0;
+    margin:0;
+    min-width:1280px;
+}
+.inner{
+    width:1200px;
+    margin:0 auto;
+}
+a{
+    color:#2e2e2e;
+    text-decoration: none;
+    font-size:22px;
+}
+ul{
+    list-style:none;
+}
+header{
+    width:100%;
+    height:650px;
+    background:linear-gradient(to top,rgba(255,255,255,1) 48% , rgba(0,0,0,0.4)50%);
+    position: relative;
+}
+header div.back{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    z-index: -10;
+}
+header nav{
+    width:100%;
+    height: 80px;
+    position: fixed;
+    z-index: 500;
+}
+header nav .inner{
+    height: auto;
+    display: flex;
+    flex-flow:row;
+    justify-content: center;
+    align-items: center;
+}
+header nav .inner a{
+    margin:0 50px;
+    color:#ddd;
+    font-weight: 700;
+    position: relative;
+}
+header nav .inner a::after{
+    position: absolute;
+    width:0;
+    height: 1px;
+    bottom:-10px;
+    left:-5%;
+    background:rgba(255,255,255,0.7);
+    content:"";
+}
+header nav .inner a:hover::after{
+    width:110%;
+    transition:width 0.3s
+}
+header nav .inner .logo{
+    width:80px;
+    height: 70px;
+    background:url(../images/donghwa/logo.png)0 0 no-repeat;
+    background-size:contain;
+}
+header main{
+    width:100%;
+    height: auto;
+}
+header main>div.inner{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+header main .inner .photo{
+    height: 375px;
+    width:124px;
+    background:url(../images/donghwa/section1/GS.png)0 0 no-repeat;
+    background-size:contain;
+    margin-left:200px;
+}
+header main .inner .txt{
+    display: flex;
+    flex-flow:column;
+}
+header main .inner .txt span{
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom:10px;
+}
+header main .inner .hwal{
+    background:url(../images/donghwa/section1/hwal_2.png)0 0 no-repeat;
+    width:200px;
+    height: 150px;
+    background-size: contain;
+}
+section{
+    width:100%;
+    height: auto;
+    position: relative;
+}
+section::after{
+    position: absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    height: 1px;
+    background:rgba(0,0,0,0.3);
+    content:"";
+}
+section.sec01{
+    position: relative;
+    background:linear-gradient(to right, #1a6952 50%,#fff 50%);
+}
+section.sec01 .BG{
+    width:480px;
+    height: 480px;
+    position: absolute;
+    background:url(../images/donghwa/story/back.png)0 0 no-repeat;
+    background-size:cover;
+    right:50%;
+    bottom:0;
+}
+section.sec01 .inner{
+    width:1200px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin:0 auto;
+    padding-top:50px;
+    padding-bottom:50px;
+}
+section.sec01 .inner>div.story{
+    display: flex;
+    width:50%;
+    flex-flow:column;
+}
+section.sec01 .inner>div.story>div.title{
+    height: auto;
+}
+section.sec01 .inner .story>div.title>div.logo{
+    background:url(../images/donghwa/story/name.png)0 0 no-repeat;
+    width:180px;
+    height: 100px;
+    background-size:contain;
+    margin:10px 0 20px;
+}
+section.sec01 .inner .story>h1{
+    margin:10px 0 10px;
+    font-size:25px;
+}
+section.sec01 .inner .story>p{
+    font-size:18px;
+    margin:10px 0 20px;
+}
+section.sec01 .inner .story h2{
+    color:white;
+    font-size:22px;
+    margin-bottom:30px;
+}
+section.sec01 .inner .story p,
+section.sec01 .inner .story h1,
+section.sec01 .inner .story h2{
+    color:#fff;
+    text-shadow: 1px 1px 1px #2e2e2e;
+    padding-right:120px;
+}
+section.sec01 div.photo{
+    width: 230px;
+    height: 600px;
+    background:url(../images/donghwa/story/hwal_1.png)0 0 no-repeat;
+    background-size:cover;
+    position: absolute;
+    z-index:5;
+    top:10%;
+    left:42%;
+}
+section.sec01 .story .circle{
+    display: flex;
+    flex-flow:row;
+    height: 80px;
+    align-items: center;
+    margin-bottom:30px;
+    margin-left:120px;
+    position: relative;
+}
+section.sec01 .story .circle:nth-child(2n){
+    margin-left:220px;
+}
+section.sec01 .story .circle>img{
+    cursor: pointer;
+    margin-right:10px;
+}
+section.sec01 .story .circle::before{
+    width:120px;
+    height: 1px;
+    background:rgba(0,0,0,0.3);
+    content:"";
+    position: absolute;
+    z-index: 4;
+    right:100%;
+}
+section.sec02 h1{
+    color:#144F3E;
+    font-size:30px;
+    font-weight: 800;
+    text-align: center;
+}
+section.sec02 .swiper-container .swiper-wrapper .swiper-slide{
+    margin:50px 0 100px;
+    display: flex;
+    opacity: 0.7;
+    -webkit-transform: scale(0.7);
+    transform: scale(0.7);
+    flex-flow:column-reverse;
+    align-items: center;
+}
+section.sec02 .swiper-container .swiper-wrapper .swiper-slide>img:first-of-type{
+    height: 80px;
+}
+section.sec02 .swiper-container .swiper-wrapper .swiper-slide>img:last-of-type{
+    height: 400px;
+}
+section.sec02 .swiper-container .swiper-wrapper .swiper-slide.swiper-slide-active{
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-transition:all 0.5s;
+    transition:all 0.5s;
+    opacity: 1;
+}
+section.sec02 .swiper-container .swiper-wrapper .swiper-slide.swiper-slide-next,
+section.sec02 .swiper-container .swiper-wrapper .swiper-slide.swiper-slide-prev{
+    -webkit-transform:scale(0.8);
+    transform:scale(0.8);
+    -webkit-transition:all 0.5s;
+    transition:all 0.5s;
+    opacity: 0.8;
+}
+section.sec03{
+    position: relative;
+}
+section.sec03 .inner{
+    padding-top:50px;
+    padding-bottom:100px;
+    display: flex;
+    flex-flow:column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+section.sec03 .inner h1{
+    color:#144F3E;
+    font-size:30px;
+    font-weight: 800;
+}
+section.sec03 .inner h2{
+    color:#144F3E;
+    font-size:25px;
+    font-weight: 700;
+}
+section.sec03 .inner h3{
+    color:#3e3e3e;
+    font-size:20px;
+    text-align: center;
+}
+section.sec03 .inner .cam{
+    background:url(../images/donghwa/campain/cam.jpg) 0 50% ;
+    width:1200px;
+    height: 300px;
+    background-size:cover;
+}
+section.sec03 .inner .wrap{
+    height: auto;
+    margin-top:50px;
+}
+section.sec03 .inner .wrap .box01,
+section.sec03 .inner .wrap .box02,
+section.sec03 .inner .wrap .box03{
+    width:100%;
+    display: flex;
+    flex-flow:row;
+    justify-content:center;
+    align-items: center;
+    margin-bottom:50px;
+}
+section.sec03 .inner .wrap .box02{
+    flex-flow:row-reverse;
+}
+section.sec03 .inner .wrap>div>img:first-of-type{
+    width:40%;
+}
+section.sec03 .inner .wrap>div>img:last-of-type{
+    width:30%;
+}
+section.sec04{
+    width:100%;
+    height: auto;
+    padding-top:50px;
+    padding-bottom:50px;
+}
+section.sec04 .inner h1{
+    color:#144F3E;
+    font-size:30px;
+    font-weight: 800;
+    text-align: center;
+}
+section.sec04 h3{
+    font-size:16px;
+    width:300px;
+    height: 20px;
+    margin-left:5px;
+}
+section.sec04 .inner .news{
+    display: flex;
+    flex-flow:row;
+    position: relative;
+    margin:50px 0 50px;
+}
+section.sec04 .inner .news_1,
+section.sec04 .inner .news_2,
+section.sec04 .inner .news_3{
+    margin-right: 15px;
+    padding-top:20px;
+}
+section.sec04 .inner .news::after,
+section.sec04 .inner .toon::after{
+    width:305px;
+    height: 326px;
+    background:rgba(255,255,255,0.85);
+    position: absolute;
+    content: "";
+    top:0;
+    right:0;
+    z-index: 1;
+}
+section.sec04 .inner .news .view,
+section.sec04 .inner .toon .view,
+section.sec04 .inner .book .view{
+    width:300px;
+    height: 100px;
+    border:2px solid #5e5e5e;
+    border-left:none;
+    border-right:none;
+    position: absolute;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    bottom:20%;
+    right:0;
+    z-index: 2;
+}
+section.sec04 .inner .news_1 .photo,
+section.sec04 .inner .news_2 .photo,
+section.sec04 .inner .news_3 .photo{
+    width:300px;
+    height: 210px;
+    margin-top:20px;
+}
+section.sec04 .inner .news_1 .photo{
+    background:url(../images/donghwa/news/news_1.jpg)0 0 no-repeat;
+    background-size: cover;
+}
+section.sec04 .inner .news_2 .photo{
+    background:url(../images/donghwa/news/news_2.jpg)0 0 no-repeat;
+    background-size:cover;
+}
+section.sec04 .inner .news_3 .photo{
+    background:url(../images/donghwa/news/news_3.jpg)0 0 no-repeat;
+    background-size:cover;
+}
+section.sec04 .inner .toon{
+    height: 380px;
+    margin-bottom:50px;
+    display: flex;
+    flex-flow:row;
+    position: relative;
+}
+section.sec04 .inner .toon .toon_1,
+section.sec04 .inner .toon .toon_2,
+section.sec04 .inner .toon .toon_3{
+    width: 300px;
+    height:380px;
+    margin:0;
+}
+section.sec04 .inner .toon_1{
+    background:url(../images/donghwa/news/toon_1.jpg)0 20px no-repeat;
+    background-size: cover;
+}
+section.sec04 .inner .toon_2{
+    background:url(../images/donghwa/news/toon_2.jpg) 0 20px no-repeat;
+    background-size: cover;
+}
+section.sec04 .inner .toon_3{
+    background:url(../images/donghwa/news/toon_3.jpg)0 20px no-repeat;
+    background-size:cover;
+}
+section.sec04 .inner .news .view span,
+section.sec04 .inner .toon .view span,
+section.sec04 .inner .book .view span{
+    font-size:18px;
+    padding:28px 20px 28px 30px;
+    height: 100px;
+    color:#686767;
+    margin-left:70px;
+}
+section.sec04 .inner .toon .view button,
+section.sec04 .inner .news .view button,
+section.sec04 .inner .book .view button{
+    width:32px;
+    height: 32px;
+    cursor: pointer;
+    background:url(../images/donghwa/news/icon.png)0 0 no-repeat;
+    border:none;
+}
+section.sec04 .inner .toon .view span::after,
+section.sec04 .inner .news .view span::after{
+    display: none;
+}
+section.sec04 .inner .book{
+    height: 300px;
+    position: relative;
+    margin-bottom:50px;
+}
+section.sec04 .inner .book .view span::after{
+    display:none;
+}
+section.sec04 .inner .vedio{
+    width:1089px;
+    height: 720px;
+}
+footer{
+    width:100%;
+    height: auto;
+    background:#144F3E;
+    position: relative;
+}
+footer .inner{
+    width:800px;
+    display: flex;
+    flex-flow:row;
+    justify-content: space-between;
+    padding:20px 0;
+}
+footer::after{
+    position: absolute;
+    width:100%;
+    height: 1px;
+    background:rgba(255,255,255,0.6);
+    content:"";
+    left:0;
+    bottom:30%;
+}
+footer .inner .place{
+    display: flex;
+    flex-flow:column;
+}
+footer .inner select{
+    width:120px;
+    height: 20px;
+}
+footer .addr{
+    width:800px;
+    margin:0 auto;
+    display: flex;
+    flex-flow:row;
+    align-items: center;
+    justify-content: space-between;
+}
+footer .addr .logo{
+    width:177px;
+    height: 42px;
+    background:url(../images/donghwa/footer/logo.png)0 0 no-repeat;
+}
+footer span{
+    color:white;
+    font-size:18px;
+}
+
+@media all and (-ms-high-contrast:none) {
+
+}
+@media screen and (-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+}
+.is-ie .swiper-slide{
+    float: left;
+}
+.is-ie .swiper-button-next{
+    width: 75px;
+    height: 75px;
+    background: url(../images/donghwa/baseline_arrow_forward_ios_black_18dp.png) ;
+    background-size: cover;
+}
+.is-ie .swiper-button-prev{
+    width: 75px;
+    height: 75px;
+    background: url(../images/donghwa/baseline_arrow_back_ios_black_18dp.png) ;
+    background-size: cover;
+}
+.is-ie header div.back{
+    background:url(../images/donghwa/BG_02.jpg);
+    background-size:cover;
+}
+.is-ie header main .inner .photo{
+    height: 375px;
+    width:124px;
+    background:url(../images/donghwa/section1/GS.png)0 0 no-repeat;
+    background-size:contain;
+    margin-top:200px;
+}
+.is-ie header main .inner .txt{
+    float: left;
+}

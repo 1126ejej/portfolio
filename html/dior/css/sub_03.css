@@ -1,0 +1,240 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* Noto Sans KR 폰트 */
+*{box-sizing: border-box;}
+body{
+    padding:0;
+    margin:0;
+    min-width:1280px;
+    overflow-x: hidden;
+}
+h1, h2, h3{
+    text-align: center;
+}
+section{
+    position: relative;
+}
+nav{
+    width:100%;
+    height:80px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 150;
+    align-items: center;
+}
+nav >i{
+    position: absolute;
+    cursor: pointer;
+}
+h1{
+    color:inherit;
+    margin:3em;
+    text-align: center;
+}
+.vertical-slider{
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    width:100%;
+}
+.slide-content{
+    display: block;
+    position: relative;
+    background:linear-gradient(to right, rgba(0,0,0,1)35%,rgba(0,0,0,0));
+    width:100vw;
+    height: 100vh;
+}
+.slide-content:first-child{
+    display: block;
+    position: relative;
+    background:linear-gradient(to right, rgba(0,0,0,1)50%,rgba(0,0,0,0));
+    width:100vw;
+    height: 100vh;
+}
+div.wrap{
+    width:100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    display: flex;
+    flex-flow:row;
+    justify-content:space-around;
+    align-items: center;
+    padding: 0 300px;
+}
+div.wrap>p{
+    width:300px;
+    text-align: center;
+    font-weight: 600;
+    font-size:20px;
+    color:#fff;
+    word-wrap: break-word
+}
+div.wrap .photo{
+    display: flex;
+    flex-flow:column;
+    justify-content:center;
+    align-items: center;
+}
+.slide{
+    color:#fff;
+    display: inline-block;
+}
+.vertical-slide.s01{
+    background-image:url(../images/sub/miss_01.jpg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: 100% center;
+}
+.vertical-slide.s02{
+    background-image:url(../images/sub/poison_04.jpg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: 170% center;
+}
+.vertical-slide.s03{
+    background-image:url(../images/sub/tec_02.jpg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position:150% center;
+}
+.vertical-slide.s04{
+    background-image:url(../images/sub/tec_01.jpg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: 120% center;
+}
+.slick-dots li{
+    width:100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    margin:0;
+}
+.slick-dots li button::before{
+    color:rgba(255,255,255,0.65);
+    content:unset;
+}
+#slick-slide-control00::before{
+    font-size:25px;
+    font-weight: 600;
+    content:"1947";
+    font-family:Times New Roman;
+    top:60px;
+    left:110%;
+}
+#slick-slide-control01::before{
+    font-size:25px;
+    font-weight: 600;
+    content:"1985";
+    font-family:Times New Roman;
+    top:-20%;
+    left:60px;
+    transform: rotate(-90deg);
+}
+#slick-slide-control02::before{
+    font-size:25px;
+    font-family:Times New Roman;
+    font-weight: 600;
+    content:"1999";
+    top:60px;
+    left:unset;
+    right:110%;
+    transform:rotate(180deg);
+}
+#slick-slide-control03::before{
+    content:"2018";
+    font-family:Times New Roman;
+    font-size:25px;
+    font-weight: 600;
+    top:110%;
+    left:60px;
+    transform: rotate(90deg);
+}
+.vertical-slider.slick-dotted{
+    margin-bottom:0;
+}
+.vertical-slider > .slick-dots{
+    bottom:0;
+    left:1.5em;
+    padding:0;
+    width:150px;
+    height: 150px;
+    margin:0;
+    top:50%;
+    transform: rotate(0deg);
+    transition: transform 0.3s;
+    border-radius: 50%;
+    background:rgba(255,255,255,0.5);
+}
+.slick-dots li.slick-active button::before{
+    color:rgba(255,255,255,1)
+}
+div.line01{
+    position: absolute;
+    width:4px;
+    height: 100%;
+    background:#000;
+    top:0;
+    left:20%;
+}
+footer{
+    width:100%;
+    height: 20vh;
+    background:#000;
+    display: flex;
+    flex-flow:column;
+    justify-content: center;
+    align-items: center;
+}
+footer .inner{
+    width:1200px;
+    margin:0 auto;
+    display: flex;
+    flex-flow:column;
+    justify-content: space-around;
+    align-items: center;
+}
+footer .inner div.logo{
+    background:url(../images/dior/logoW.png)0 0 no-repeat;
+    width:120px;
+    height: 80px;
+    background-size:contain;
+}
+footer .inner .line{
+    display: flex;
+    flex-flow:row;
+    align-items: center;
+}
+footer .inner .line span{
+    cursor: pointer;
+    margin:5px 0;
+    font-size:14px;
+    color:#fbfbfb;
+    margin:0 10px;
+    position: relative;
+}
+footer .inner .line span::after{
+    width:1px;
+    height: 60%;
+    background:#fbfbfb;
+    position: absolute;
+    content:"";
+    right:-10px;
+    top:25%;
+}
+footer .inner .line span:last-child::after{
+    background:none;
+}
+footer .inner .bottom{
+    margin-top:15px;
+}
+footer .inner .bottom span{
+    color:#fbfbfb;
+    font-size:13px;
+}

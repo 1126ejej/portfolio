@@ -1,0 +1,12 @@
+$(document).ready(function(){
+  $("div.menu>ul>li").children("ul").hide();
+  $("i.mMenuBt").click(function(){
+    $("div.menu").addClass("on");
+  });
+  $("div.menu>ul>li").click(function(){
+    $(this).children("ul").slideToggle().siblings();
+  });
+  $("i.mCloseBt").click(function(){
+    $("div.menu").removeClass("on");
+  })
+});
