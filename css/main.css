@@ -1,0 +1,309 @@
+@charset "UTF-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* Noto Sans KR 폰트 */
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+*{box-sizing: border-box;}
+*{font-family: "Noto Sans KR";}
+/* div, p, h1, h2, h3 ,ul ,li ,span , a{
+    border:1px solid red;
+} */
+/*오후
+색상
+#3a3c55
+#fffcd9
+#e1b689
+*/
+body{
+    padding:0;
+    margin:0;
+    min-width:1280px;
+    overflow-x: hidden;
+	position: relative;
+    background:#ddd;
+}
+/*
+header,section,footer,div,a,span,p{
+	border:1px solid red;
+}
+*/
+header{
+	width:100%;
+	height: 80px;
+	display: flex;
+	flex-flow:row;
+	align-content: center;
+	justify-content: space-between;
+	padding:0 15%;
+	position:fixed;
+	top:0;
+	left:0;
+	z-index: 15;
+/*	background:#3a3c55;*/
+}
+header::after{
+	width:90%;
+	height: 1px;
+	background:#fffcd9;
+	content:"";
+	position:absolute;
+	z-index: 15;
+	top:100%;
+	left:5%;
+	opacity: 0.1;
+}
+header>a{
+/*	color:#fffcd9;*/
+	text-decoration: none;
+	font-weight: 400;
+	font-size:1em;
+	margin:0;
+	padding:auto;
+	height: 100%;
+	cursor: pointer;
+	line-height: 80px;
+}
+section{
+	width:100%;
+	height: 100%;
+	margin:0;
+/*	background:#3a3c55;*/
+}
+.inner{
+	width:80%;
+	padding:0;
+	margin:0 auto;
+	height: 100vh;
+}
+section.sec01{
+	position:relative;
+}
+/*
+section::after{
+	position:absolute;
+	top:100%;
+	left:0;
+	width:100%;
+	height: 1px;
+	background:#fffcd9;
+	content:"";
+	opacity: 0.2
+}
+*/
+section.sec01>div.inner{
+	position:relative;
+}
+section.sec01>div.inner>div.box>div.inbox>div.title{
+    
+	display: flex;
+	flex-flow:column;
+	align-items: center;
+	justify-content: right;
+    margin-top:15%;    
+}
+section.sec01>div.inner>div.box>div.inbox>div.title>p{
+/*	color:#fffcd9;*/
+	font-size:6.5em;
+    text-align: right;
+	font-weight: 500;
+	margin:0;
+	padding:0;
+}
+section.sec01>div.inner>div.box>div.inbox>div.title>span{
+/*	color:#fffcd9;*/
+	font-size:1.4em;
+	font-weight: 300;
+	margin:30px 0 0 10px;
+	padding:0;
+	text-align: center;
+}
+section.sec01>div.inner>div.box{
+	width:60%;
+	height: 50vh;
+	border:5px solid #000;
+	position:absolute;
+	left:10%;
+	top:300px;
+}
+section.sec01>div.inner>div.box>div.inbox{
+	width:100%;
+	height: 100%;
+	border:5px solid #000;
+	position:absolute;
+	left:50px;
+	top:50px;
+}
+section>div.inner>div.circle01{
+	width:500px;
+	height: 500px;
+	border-radius: 50%;
+	background:#151716;
+	position:absolute;
+	bottom:-150px;
+	right:-50px;
+	opacity: 0.3;
+}
+section>div.inner>div.circle02{
+	width:300px;
+	height: 300px;
+	border-radius: 50%;
+	background:#fffcd9;
+	position:absolute;
+	top:150px;
+	right:-50px;
+	opacity: 0.2;
+}
+section.sec02>div.inner,
+section.sec03>div.inner,
+section.sec04>div.inner,
+section.sec05>div.inner,
+section.sec06>div.inner{
+	padding-top:80px;
+	display: flex;
+	flex-flow:column;
+    position: relative;
+	justify-content: space-around;
+}
+section.sec02>div.inner>div.circle01,
+section.sec04>div.inner>div.circle01{
+    bottom:150px;
+	left:-50px;
+}
+section.sec02>div.inner>div.circle02,
+section.sec04>div.inner>div.circle02{
+    top:150px;
+	right:-50px;
+}
+section.sec02>div.inner>div.title,
+section.sec03>div.inner>div.title,
+section.sec04>div.inner>div.title,
+section.sec05>div.inner>div.title,
+section.sec06>div.inner>div.title{
+	display: flex;
+	flex-flow:row;
+}
+section.sec06>div.inner>div.circle01{
+    display: none;
+}
+section.sec02>div.inner>div.title>h1,
+section.sec02>div.inner>div.title>h2,
+section.sec03>div.inner>div.title>h1,
+section.sec03>div.inner>div.title>h2,
+section.sec04>div.inner>div.title>h1,
+section.sec04>div.inner>div.title>h2,
+section.sec05>div.inner>div.title>h1,
+section.sec05>div.inner>div.title>h2,
+section.sec06>div.inner>div.title>h1,
+section.sec06>div.inner>div.title>h2{
+/*	color:#fffcd9;*/
+	font-size:2.5em;
+	margin:0;
+	padding:0;
+}
+section.sec02>div.inner>div.title>h1,
+section.sec03>div.inner>div.title>h1,
+section.sec04>div.inner>div.title>h1,
+section.sec05>div.inner>div.title>h1,
+section.sec06>div.inner>div.title>h1{
+	font-weight: 500;
+	margin-right:10px;
+}
+section.sec02>div.inner>div.title>h2,
+section.sec03>div.inner>div.title>h2,
+section.sec04>div.inner>div.title>h2,
+section.sec05>div.inner>div.title>h2,
+section.sec06>div.inner>div.title>h2{
+	font-weight: 200;
+}
+section>div.inner>div.content{
+	width:100%;
+	height: 80%;
+	padding:20px;
+	display: flex;
+	flex-flow:row;
+	align-items: center;
+	justify-content: space-between;
+}
+section>div.inner>div.content>div.mokup{
+	width:70%;
+	height: 100%;
+	margin:0;
+	padding:0;
+    display: flex;
+    flex-flow:row;
+    justify-content: center;
+    position:relative;
+    z-index: 15;
+    align-items: center;
+}
+section>div.inner>div.content>div.mokup>img{
+	width:100%;
+}
+section>div.inner>div.content>div.text{
+	width:30%;
+	height: 70%;
+    display: flex;
+    flex-flow:column;
+    justify-content: center;
+    align-items: left;
+    margin:0 auto;
+}
+section>div.inner>div.content>div.text>h1,
+section>div.inner>div.content>div.text>p{
+/*	color:#fffcd9;*/
+}
+section>div.inner>div.content>div.text>h1{
+	font-size:2.4em;
+	margin-bottom:50px;
+}
+section>div.inner>div.content>div.text>p{
+    font-size:1.3em;
+    margin-bottom:10%;
+}
+section.sec05>div.inner>div.content>div.mokup>img{
+	width: auto;
+	height: 50%;
+}
+section>div.inner>div.content>div.text>div.view{
+    width:150px;
+    height: 50px;
+    border:1px solid #fffcd9;
+    display: flex;
+    flex-flow:column;
+    align-items: center;
+    justify-content: center;
+}
+section>div.inner>div.content>div.text>div.view>a{
+/*    color:#fffcd9;*/
+    font-size:1.3em;
+    margin:0;
+    text-align: center;
+}
+section.profile{
+    position: fixed;
+    width:90vw;
+    height: 100vh;
+    background:#ddd;
+    left:10vw;
+    top:0;
+    z-index: 100;
+    padding:5% 10%;
+    display: flex;
+    flex-flow:row;
+}
+/*
+section.profile::before{
+    position:absolute;
+    top:43%;
+    right:100%;
+    background:#ddd;
+    width:7%;
+    height: 14%;
+    content:"";
+}
+*/
+section.profile>div{
+    width:50%;
+    height: 100%;
+    border:1px solid red;
+}
