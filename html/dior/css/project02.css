@@ -1,0 +1,506 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* Noto Sans KR 폰트 */
+*{box-sizing: border-box;}
+body{
+    padding:0;
+    margin:0;
+    min-width:1280px;
+    overflow-x: hidden;
+}
+h3{
+    text-align: center;
+    font-weight: 500;
+    font-size:18px;
+    margin-top:50px;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+a{
+    text-decoration: none;
+}
+.inner{
+    width:1200px;
+    height: auto;
+    margin:0 auto;
+}
+/* header ,section ,footer, div, span{
+    border :1px solid red;
+} */
+header{
+    width:100%;
+    height: 100vh;
+    position: relative;
+}
+header::after{
+    position: absolute;
+    content:"";
+    width:100%;
+    height: 1px;
+    background:rgba(0,0,0,0.35);
+    bottom:0;
+    left:0;
+}
+header main{
+    width:100%;
+    height: 100vh;
+    background:url(../images/dior/BG_01.jpg);
+    background-size:contain;
+    position: absolute;
+    z-index: -1;
+}
+header div.swiper-container{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    top:0;
+    left:0;
+}
+header div.swiper-container div.swiper-slide{
+    display: flex;
+    flex-flow:row;
+    align-items: center;
+    justify-content: center;
+}
+div.swiper-slide>img:first-child{
+    margin-right:150px;
+    height: 450px;
+}
+div.swiper-slide>img:last-child{
+    position: absolute;
+    top:10px;
+    left:10px;
+}
+.vegas-slide-inner{
+    background-size:contain;
+}
+header nav{
+    width:100%;
+    height: 80px;
+    display: flex;
+    flex-flow:row;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    z-index: 5;
+    top:0;
+    left:0;
+}
+header nav i.mMenuBt{
+    font-size:40px;
+    cursor: pointer;
+}
+header nav .menu{
+    width:50%;
+    height: 100vh;
+    background:rgba(0,0,0,0.8);
+    position: absolute;
+    z-index: 10;
+    top:0;
+    right:0;
+    transform:translateX(150%);
+    transition: all 0.3s;
+}
+header nav .menu.on{
+    transform:translateX(0);
+    transition: all 0.3s;
+}
+header nav .menu>div.top{
+    width:100%;
+    height: 100px;
+    display: flex;
+    flex-flow:row;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom:1px solid #fff;
+    position: relative;
+}
+header nav .menu>div.top::after{
+    position: absolute;
+    content:"";
+    left:50%;
+    width:1px;
+    height: 100%;
+    top:0;
+    background:#fff;
+}
+header nav .menu>div.close{
+    width:100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    justify-content: center;
+    background:rgba(0,0,0,0.8);
+    top:0;
+    right:100%;
+}
+header nav .menu>div.close>i{
+    color:#fff;
+    font-size:40px;
+    cursor: pointer;
+}
+header nav .menu>div>i{
+    font-size:40px;
+    color:#fff;
+}
+header nav .menu>ul{
+    width:100%;
+    list-style: none;
+    padding:0;
+    margin:0;
+}
+header nav .menu>ul>li{
+    text-align: center;
+    color:white;
+    cursor: pointer;
+    font-size:25px;
+    display: block;
+}
+header nav .menu>ul>li>a>span{
+    color:#fff;
+    text-align: center;
+}
+header nav .menu>ul>li>a{
+    text-decoration: none;
+    color:#fff;
+    display: block;
+    padding:20px 0;
+}
+header nav .menu>ul>li>a:hover{
+    background:#7e7e7e;
+}
+header nav .menu>ul ul.depth01,
+header nav .menu>ul ul.depth02,
+header nav .menu>ul ul.depth03{
+    list-style: none;
+    padding:0;
+    margin:0;
+    display: block;
+}
+header nav .menu>ul ul.depth01>li,
+header nav .menu>ul ul.depth02>li,
+header nav .menu>ul ul.depth03>li{
+    width:100%;
+    padding:15px 0;
+}
+header nav .menu>ul ul.depth01>li:hover,
+header nav .menu>ul ul.depth02>li:hover,
+header nav .menu>ul ul.depth03>li:hover{
+    background:#7e7e7e;
+}
+header nav .menu>ul ul.depth01>li>a,
+header nav .menu>ul ul.depth02>li>a,
+header nav .menu>ul ul.depth03>li>a{
+    color:#fff;
+    font-size:20px;
+}
+header div.slide01,
+header div.slide02,
+header div.slide03,
+header div.slide04{
+    width: 100%;
+    height: 100%;
+}
+header div.slide01{
+    background:url(../images/dior/BG_01.jpg)0 0 no-repeat;
+    background-size:cover;
+}
+header div.slide02{
+    background:url(../images/dior/BG_02.jpg)0 0 no-repeat;
+    background-size:cover;
+}
+header div.slide03{
+    background:url(../images/dior/BG_03.jpg) 0 0 no-repeat;
+    background-size:cover;
+}
+header div.slide04{
+    background:url(../images/dior/BG_04.jpg)0 0 no-repeat;
+    background-size:cover;
+}
+section{
+    width:100%;
+    height: auto;
+    margin-bottom:100px;
+    position: relative;
+}
+section::after{
+    position: absolute;
+    content:"";
+    width:100%;
+    bottom:-100px;
+    background:rgba(0,0,0,0.65);
+    height: 1px;
+    left:0;
+}
+section.sec01{
+    padding-top:100px;
+}
+h1{
+    text-align: center;
+    font-size:28px;
+}
+section.sec01 .inner{
+    display: flex;
+    flex-flow:row;
+    flex-wrap: wrap;
+    margin:100px auto 50px;
+    justify-content: center;
+}
+section.sec01 .inner>img{
+    padding:10px;
+}
+section.sec01 .inner button{
+    margin:50px 0;
+}
+section.sec01 .inner div.more{
+    height: 500px;
+    display: flex;
+    width: 33.33%;
+    flex-flow:column;
+    justify-content: space-around;
+    padding:50px 0;
+}
+section.sec01 .inner div.more>p{
+    text-align: center;
+}
+button{
+    width:200px;
+    height: 50px;
+    background:none;
+    font-size:22px;
+    border:1px solid rgba(0,0,0,0.8);
+    border-radius: 25px;
+    transition:all 0.3s;
+}
+button>a{
+    color:#000;
+}
+button:hover{
+    background:black;
+    color:#fff;
+}
+button:hover a{
+    color:#fff;
+}
+section.sec02{
+    padding:100px 0;
+}
+section.sec02 .inner{
+    display: flex;
+    flex-flow:column;
+    align-items: center;
+}
+section.sec02 .inner .wrap{
+    width:100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+section.sec02 .inner .wrap .box{
+    width:280px;
+    height: 400px;
+    overflow: hidden;
+    display: flex;
+    flex-flow:column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    cursor: pointer;
+    margin:100px 0 0;
+    box-shadow: 1px 1px 2px #6e6e6e;
+}
+section.sec02 .inner .wrap .box>img{
+    height: 100%;
+}
+section.sec02 .inner .wrap .box>div.show{
+    width:100%;
+    height: 100%;
+    background:rgba(255,255,255,0.8);
+    position: absolute;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-flow:column;
+    transform: translateY(100%);
+    transition: transform 0.6s;
+}
+section.sec02 .inner .wrap .box>div.show>img{
+    width:200px;
+}
+section.sec02 .inner .wrap .box:hover >div.show{
+    transform: translateY(0);
+    transition: transform 0.6s;
+}
+section.sec03{
+    width:100%;
+    height: auto;
+    padding:100px 
+}
+section.sec03 .inner .other{
+    width:100%;
+    height: auto;
+    display: flex;
+    flex-flow:wrap;
+    margin-top:100px;
+}
+section.sec03 .inner .other .men{
+    width:40%;
+    height: 500px;
+    background:url(../images/dior/section04/sauvage.jpg)0 0 no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+section.sec03 .inner .other .candle{
+    width:60%;
+    height: 500px;
+    background:url(../images/dior/section04/candle_01.jpg);
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+section.sec03 .inner .other .bath{
+    width:60%;
+    height: 500px;
+    background:url(../images/dior/section04/bath_01.jpg);
+    background-size:cover;
+    background-position: center center;
+    position: relative;
+}
+section.sec03 .inner .other .scarf{
+    width:40%;
+    height: 500px;
+    background:url(../images/dior/section04/scarf_01.jpg);
+    background-size:cover;
+    position: relative;
+}
+section.sec03 .inner .other>div>button{
+    border:1px solid rgba(0,0,0,0.65);
+    font-size:22px;
+    font-weight:900;
+    text-shadow: 2px 2px 1px rgba(255,255,255,0.8);
+    position: absolute;
+    z-index: 2;
+    width:80%;
+    background:#fff;
+    height: 50px;
+    left:10%;
+    bottom:50px;
+}
+section.sec03 .inner .other>div::after{
+    background:rgba(255,255,255,0.6);
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    content:"";
+    position: absolute;
+}
+section.sec03 .inner .other>div:hover::after{
+    background:rgba(255,255,255,0);
+    transition:all 0.3s;
+}
+section.sec03 .inner .other>div:hover >button{
+    color:#fff;
+    background:rgba(0,0,0,0.35);
+    border:1px solid rgba(255,255,255,0.6);
+    text-shadow: 2px 2px 1px rgba(0,0,0,0.8);
+}
+section.sec04{
+    padding:50px 0;
+}
+section.sec04>h1{
+    text-align: center;
+}
+section.sec04 .inner{
+    display: flex;
+    flex-flow:row;
+    justify-content: center;
+    margin:50px auto;
+}
+section.sec04 .inner .sns{
+    border:1px solid rgba(0,0,0,0.35);
+    display: flex;
+    justify-content: center;
+    padding:60px;
+    margin:50px 10px 0;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+section.sec04 .inner .sns>i{
+    font-size:60px;
+}
+section.sec04 .inner .sns:hover{
+    background:#3f3f3f;
+    transition: all 0.3s;
+}
+section.sec04 .inner .sns:hover >i{
+    color:#fff;
+}
+footer{
+    width:100%;
+    height: 20vh;
+    background:#000;
+    display: flex;
+    flex-flow:column;
+    justify-content: center;
+    align-items: center;
+}
+footer .inner{
+    width:1200px;
+    margin:0 auto;
+    display: flex;
+    flex-flow:column;
+    justify-content: space-around;
+    align-items: center;
+}
+footer .inner div.logo{
+    background:url(../images/dior/logoW.png)0 0 no-repeat;
+    width:120px;
+    height: 80px;
+    background-size:contain;
+}
+footer .inner .line{
+    display: flex;
+    flex-flow:row;
+    align-items: center;
+}
+footer .inner .line span{
+    cursor: pointer;
+    margin:5px 0;
+    font-size:14px;
+    color:#fbfbfb;
+    margin:0 10px;
+    position: relative;
+}
+footer .inner .line span::after{
+    width:1px;
+    height: 60%;
+    background:#fbfbfb;
+    position: absolute;
+    content:"";
+    right:-10px;
+    top:25%;
+}
+footer .inner .line span:last-child::after{
+    background:none;
+}
+footer .inner .bottom{
+    margin-top:15px;
+}
+footer .inner .bottom span{
+    color:#fbfbfb;
+    font-size:13px;
+}
