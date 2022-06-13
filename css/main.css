@@ -53,7 +53,6 @@ header::after{
 	opacity: 0.1;
 }
 header>a{
-	color:#000;
 	text-decoration: none;
 	font-weight: 400;
 	font-size:1.35em;
@@ -64,6 +63,7 @@ header>a{
 	line-height: 80px;
     display: block;
     position:relative;
+	color:#000;
 }
 header>a::after{
     width:0%;
