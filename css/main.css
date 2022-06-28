@@ -38,7 +38,7 @@ header{
 	position:fixed;
 	top:0;
 	left:0;
-	z-index: 15;
+	z-index: 1115;
 	background:#F2E0E0;
 }
 header::after{
