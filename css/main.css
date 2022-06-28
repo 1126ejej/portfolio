@@ -375,9 +375,9 @@ section.profile>div.left>div.photo{
     height: 200px;
     border-radius: 50%;
     background-color:rgba(0,0,0,0.3);
-    background-image:url("../images/yam.jpg");
+    background-image:url("../images/yam_2.jpeg");
     background-blend-mode: multiply;
-    background-size:contain
+    background-size:cover;
 }
 section.profile>div.right{
     width:40%;
